@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import IndexPage from './pages/index';
 
-function App() {
+class App extends Component {
+  state = {
+    notes:{
+      1:{
+        _id:1,
+        title: "Hello world",
+        body: "This is the body of my Note",
+        updatedAt: new Date()
+      }
+    }
+  }
+  render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <IndexPage notes = {this.state.notes}/>
     </div>
   );
 }
-
+}
 export default App;

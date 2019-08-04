@@ -4,10 +4,9 @@ export default class ShowPage extends React.Component {
   render() {
     const {note} = this.props;
 
-    return (<div>
-
-      <h1>{note.title}</h1>
-      <div>{note.body}</div>
+    return (<div className="container">
+      <h1 className="center">{note.title}</h1>
+      <div className="card-panel">{note.body}</div>
     </div>);
   }
 }

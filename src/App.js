@@ -4,6 +4,9 @@ import './App.css';
 import IndexPage from './pages/index';
 import ShowPage from './pages/show';
 import Navbar from './components/navbar';
+import './materialize.css';
+import './material-icons.css';
+import './MaterialIcons-Regular.eot';
 
 class App extends Component {
   state = {
@@ -17,7 +20,7 @@ class App extends Component {
       2:{
         _id:2,
         title: "Hello world again",
-        body: "This is the body of my second Note",
+        body: "This is the body of my second Note. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         updatedAt: new Date()
       }
     }

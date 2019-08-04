@@ -7,12 +7,10 @@ export default class Navbar extends React.Component {
       <nav className="blue">
         <div className="container">
           <div className=" nav-wrapper ">
-            <h1 className="brand-logo left">
-              <Link to="/">MyNote</Link>
-            </h1>
+            <Link to="/">i-library</Link>
             <ul id="nav-mobile" className="right">
               <li>
-                <Link to="/new" className="btn">New Note</Link>
+                <Link to="/new" className="btn">Create Note</Link>
               </li>
             </ul>
           </div>
